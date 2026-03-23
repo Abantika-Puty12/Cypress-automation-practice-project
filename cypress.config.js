@@ -15,6 +15,7 @@ module.exports = defineConfig({
 
   e2e: {
     baseUrl: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login',
+    specPattern: "cypress/e2e/**/*.js",
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
       return require('./cypress/plugins/index.js')(on, config)
