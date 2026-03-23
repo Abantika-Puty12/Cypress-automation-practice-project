@@ -1,20 +1,21 @@
 {
  "name": "cypress-udemy-practice",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "cypress": "^15.12.0"
-  },
-  "devDependencies": {
-    "cypress-xpath": "^2.0.1",
-    "xlsx": "^0.18.5"
-
-  }
+ "version": "1.0.0",
+ "main": "index.js",
+ "scripts": {
+  "test:register": "npx cypress run --spec cypress/e2e/My_practice/registerPage.spec.cy.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "keywords": [],
+ "author": "",
+ "license": "ISC",
+ "description": "",
+ "dependencies": {
+  "cypress": "^15.12.0"
+ },
+ "devDependencies": {
+  "cypress-mochawesome-reporter": "^4.0.2",
+  "cypress-xpath": "^2.0.1",
+  "xlsx": "^0.18.5"
+ }
 }
