@@ -4,6 +4,7 @@
  "main": "index.js",
  "scripts": {
   "test:register": "npx cypress run --spec cypress/e2e/My_practice/registerPage.spec.cy.js",
+  "test:radio-button": "npx cypress run --spec cypress/e2e/Tc02_RadioButton.spec.cy.js",
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "keywords": [],
