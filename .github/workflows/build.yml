@@ -21,3 +21,12 @@ jobs:
 
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
+        with:
+          command: npm run test:register
+
+      - name: Upload Mochawesome Report   # ✅ fixed step
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome HTML Report
+          path: cypress/reports   # ✅ update with your real folder
